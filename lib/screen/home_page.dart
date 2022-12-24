@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 // import 'package:flutter/gestures.dart';
-//riaz
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shopp_my/utls/const.dart';
