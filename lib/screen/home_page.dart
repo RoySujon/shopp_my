@@ -68,9 +68,29 @@ class _HomePageState extends State<HomePage> {
               'Flash Deal',
               fs: 10,
               fw: FontWeight.w700,
+            ),
+            Container(
+              color: Colors.amber,
+              height: 200,
+              child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+                  shrinkWrap: true,
+                  itemBuilder: (context, index) => Container(
+                          child: Stack(
+                        children: [
+                          Image.asset('assets/images/product1.png'),
+                        ],
+                      )),
+                  separatorBuilder: (context, index) => SizedBox(width: 10),
+                  itemCount: 10),
             )
           ],
         ),
+      ),
+      floatingActionButton: MaterialButton(
+        onPressed: () {},
+        color: Colors.amber,
+        child: Icon(Icons.add),
       ),
     );
   }
